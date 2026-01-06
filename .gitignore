@@ -1,0 +1,64 @@
+# ==========================
+# Dependencies
+# ==========================
+client/node_modules/
+server/node_modules/
+node_modules/
+
+# ==========================
+# Environment files
+# ==========================
+client/.env.local
+server/.env
+.env
+.env*.local
+
+# ==========================
+# Yarn / PnP
+# ==========================
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ==========================
+# Testing
+# ==========================
+coverage/
+
+# ==========================
+# Next.js build outputs
+# ==========================
+.next/
+out/
+client/.next/
+
+# ==========================
+# Production builds
+# ==========================
+build/
+server/build/
+server/dist/
+
+# ==========================
+# Misc files
+# ==========================
+.DS_Store
+*.pem
+
+# ==========================
+# Debug logs
+# ==========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# Deployment / Platform
+# ==========================
+.vercel
+
+# ==========================
+# TypeScript build info
+# ==========================
+*.tsbuildinfo
+next-env.d.ts
