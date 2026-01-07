@@ -1,209 +1,78 @@
 # 🛠️ SkillTrade
 
-**SkillTrade** is a modern web platform that connects users with skilled professionals—electricians, painters, plumbers, and more—to simplify the process of hiring trusted service providers.
+**SkillTrade** is a full-stack service marketplace platform that connects users with skilled professionals such as electricians, plumbers, painters, and other service providers. The platform simplifies discovering, booking, and managing local services through a clean, modern, and role-based web application.
+
+🔗 **Live Demo:** https://skill-trade-next-15.vercel.app/  
+📦 **GitHub Repository:** https://github.com/netacodes69/Skill_Trade  
+
+SkillTrade aims to bridge the gap between customers and trusted service providers by offering an intuitive interface, secure authentication, and scalable backend architecture.
 
 ---
 
-## 🔗 Live Demo
+## 🚀 Features
 
-Check out the live version here: [SkillTrade Live](https://skill-trade-next-15.vercel.app/)
-
----
-
-## ✨ Features
-
-- 🔍 Browse and book skilled professionals easily
-- 🔐 Secure user and provider authentication
-- 💡 Intuitive, modern UI built with Next.js
-- 👥 Role-based access: Users and Service Providers
+- Browse and discover skilled professionals easily  
+- Role-based access for Users and Service Providers  
+- Secure authentication using JWT  
+- Modern, responsive UI built with Next.js  
+- Service listing and booking workflow  
+- AI-powered **SkillBot** for assistance and guidance  
 
 ---
 
-## 📸 Preview
+## 🧱 Tech Stack
 
-Here’s a glimpse of what Skilltrade looks like:
-
-### 🖥️ Landing Page
-<img width="1915" height="904" alt="image" src="https://github.com/user-attachments/assets/86d695a6-6d3d-41a3-adcf-743182926ab2" />
-
-### 🛠️ New Service Section  
-<img width="1917" height="909" alt="image" src="https://github.com/user-attachments/assets/b19647dc-5655-473c-a3a8-36b35447dc3d" />
-
-### 📝 Register  
-<img width="1917" height="896" alt="image" src="https://github.com/user-attachments/assets/a923f528-7fd0-404a-a590-b0129e665407" />
-
-### 🦾 About Us  
-<img width="1913" height="908" alt="image" src="https://github.com/user-attachments/assets/60749942-0c0c-4ee1-b1f8-acd9117ff0fa" />
-
-### 🤖 SkillBot  
-<img width="1918" height="902" alt="image" src="https://github.com/user-attachments/assets/530df6b2-10ac-4696-a8b0-6bd812de2c20" />
-
-
-## 🧰 Tech Stack
-
-| Area     | Technology          |
-| -------- | ------------------- |
-| Frontend | Next.js             |
-| Backend  | Node.js, Express.js |
-| Database | MongoDB             |
-| Auth/ORM | JWT, Mongoose       |
+- **Frontend:** Next.js  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Authentication / ORM:** JWT, Mongoose  
 
 ---
 
-## 🧑‍💻 Getting Started
+## ⚙️ Setup & Installation
 
-To run SkillTrade locally, follow the steps below. Make sure you have all required tools installed.
-
-### 🔗 Prerequisites
-
-- **Node.js** – [Download here](https://nodejs.org/)
-- **MongoDB** – Local instance or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- **Git** – Version control
-
----
-
-## 📦 Installation
-
-### 1. Fork & Clone the Repository
-
-- Click the **Fork** button (top-right of this page)
-- Clone your forked repository:
-
+1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/Skill_Trade.git
+git clone https://github.com/netacodes69/Skill_Trade.git
 cd Skill_Trade
-```
 
----
-
-### ⚙️ Frontend Setup
-
-1. Navigate to the frontend directory:
-
-```bash
-cd Skill_Trade
-```
-
-2. Install dependencies:
-
-```bash
+2️⃣ Frontend Setup
 npm install
-```
-
-3. Create a `.env.local` file in the `skill` directory:
-
-```env
-NEXT_PUBLIC_BASE_URL=http://localhost:8000
-NEXT_PUBLIC_HERE_API_KEY=
-```
-
-> 🔑 Get your HERE Maps API key from [developer.here.com](https://developer.here.com)
-
-4. Run the frontend server:
-
-```bash
 npm run dev
-```
 
-The app will be running at [http://localhost:3000](http://localhost:3000)
+Create a .env.local file:
+NEXT_PUBLIC_BASE_URL=http://localhost:8000
+NEXT_PUBLIC_HERE_API_KEY=your_here_maps_api_key
 
----
+Frontend runs at:
+http://localhost:3000
 
-### 🔧 Backend Setup
-
-1. Navigate to the backend directory:
-
-```bash
-cd ../server
-```
-
-2. Create a `.env` file in the `server` directory:
-
-```env
-DB_CONNECT=your_mongodb_uri
-email_id=             # Optional: for email functionality
-pass_key=             # Optional: for email functionality
-PORT=8000
-SECRET=UJSBBFGSIERNFDJDKKSJ    # Change this for production!
-```
-
-3. Install backend dependencies:
-
-```bash
+3️⃣ Backend Setup
+cd server
 npm install
-```
-
-4. Start the backend server:
-
-```bash
 npx nodemon server
-```
 
-The backend will be running at [http://localhost:8000](http://localhost:8000)
+Create a .env file:
+DB_CONNECT=your_mongodb_uri
+PORT=8000
+SECRET=your_jwt_secret
+email_id=
+pass_key=
 
----
+Backend runs at:
+http://localhost:8000
 
-## 📝 Usage
 
-Once both frontend and backend are running:
+🧑‍💻 Usage
+Start both frontend and backend servers
+Open http://localhost:3000
+Register or log in as a user or service provider
+Browse, list, or book services seamlessly
 
-1. Open your browser and visit: [http://localhost:3000](http://localhost:3000)
-2. Register or login
-3. Browse and book nearby service providers 🎯
+🧩 Future Enhancements
+Online payments and wallet integration
+Rating & review system
+Real-time booking notifications
+Admin dashboard and analytics
+Location-based service recommendations
 
----
-
-## 🤝 Contributing
-
-We welcome contributions! Follow the steps below:
-
-### Steps
-
-1. Fork the repository
-2. Create a new branch for your feature or bug fix:
-
-```bash
-git checkout -b your-feature-name
-```
-
-3. Make your changes
-4. Stage and commit:
-
-```bash
-git add .
-git commit -m "Add: your meaningful commit message"
-```
-
-5. Push your branch:
-
-```bash
-git push origin your-feature-name
-```
-
-6. Open a Pull Request:
-   - Go to your fork on GitHub
-   - Click "Compare & pull request"
-   - Fill in a clear title and description
-   - Submit!
-
-**Contribution Guidelines:**
-- Ensure your code builds and works correctly
-- Use descriptive commit messages ([Conventional Commits](https://www.conventionalcommits.org/))
-- Address feedback in code reviews
-
----
-
-## 📢 Contact
-
-For any questions, suggestions, or issues, feel free to open an [issue on GitHub](https://github.com/AyushSharma72/Skill_Trade/issues).
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).  
-You’re free to use, modify, and share this software under the license terms.
-
----
-
-*Happy Coding!* 🎉😀
