@@ -32,7 +32,6 @@ SkillTrade aims to bridge the gap between customers and trusted service provider
 ## ⚙️ Setup & Installation
 
 1️⃣ Clone the Repository
-```bash
 git clone https://github.com/netacodes69/Skill_Trade.git
 cd Skill_Trade
 
